@@ -1,0 +1,90 @@
+/* Write your code here. */
+.game-status {
+  display: flex;
+  background-color: #ffffff33;
+  padding: 30px;
+  border-radius: 20px;
+  border: 3px solid #ffffff30;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.score-display {
+  text-align: center;
+  line-height: 5px;
+}
+
+.status {
+  font-size: 50px;
+  color: #ffffff;
+  margin-bottom: 55px;
+}
+
+.game-status-title {
+  font-size: 28px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.game-score {
+  font-size: 38px;
+  color: #6a59ff;
+  font-weight: bold;
+}
+
+.button {
+  color: #3d3d3d;
+  background-color: #ffce27;
+  border-radius: 15px;
+  padding: 12px 18px 12px 18px;
+  border: none;
+  font-weight: 800;
+  font-family: 'Roboto';
+  cursor: pointer;
+}
+
+.game-status-image {
+  width: 280px;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .game-status {
+    flex-direction: column;
+    padding: 20px;
+    padding-bottom: 40px;
+    width: 85%;
+  }
+
+  .status {
+    font-size: 40px;
+  }
+
+  .game-status-image {
+    order: -1;
+    width: 210px;
+  }
+
+  .button {
+    padding: 18px 25px 18px 25px;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .status {
+    font-size: 35px;
+  }
+
+  .game-status-image {
+    order: -1;
+    width: 180px;
+  }
+
+  .button {
+    padding: 18px 25px 18px 25px;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+}
